@@ -1,3 +1,3 @@
 export default function Spreadsheet() {
-    return <div>Spreadsheet</div>
+  return <div>Spreadsheet</div>;
 }
