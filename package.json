@@ -6,6 +6,13 @@
   "author": "Nils Haberkamp",
   "main": "index.js",
   "type": "module",
+  "exports": {
+    "types": "./dist/index.d.ts",
+    "default": "./dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsup",
     "test": "vitest run --coverage",
