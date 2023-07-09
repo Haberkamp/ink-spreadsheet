@@ -5,6 +5,7 @@
   "license": "MIT",
   "author": "Nils Haberkamp",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "build": "tsup",
     "test": "vitest run --coverage",

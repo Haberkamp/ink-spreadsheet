@@ -6,7 +6,8 @@
     "sourceMap": true,
     "strict": true,
     "jsx": "react-jsx",
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "moduleResolution": "Node16"
   },
   "exclude": ["node_modules"]
 }
