@@ -2,6 +2,8 @@
 
 > Display spreadsheets in your terminal with ease.
 
+![Spreadsheet inside your terminal](preview.avif)
+
 ## Install
 
 ```shell
