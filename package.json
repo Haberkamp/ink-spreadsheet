@@ -16,6 +16,9 @@
     "ink",
     "react-ink"
   ],
+  "engines": {
+    "node": ">=16"
+  },
   "devDependencies": {
     "@commitlint/cli": "^17.6.6",
     "@commitlint/config-conventional": "^17.6.6",
