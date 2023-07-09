@@ -6,13 +6,15 @@
   "author": "Nils Haberkamp",
   "main": "index.js",
   "scripts": {
-    "build": "tsup"
+    "build": "tsup",
+    "format": "prettier --write ."
   },
   "keywords": [
     "ink",
     "react-ink"
   ],
   "devDependencies": {
+    "prettier": "^3.0.0",
     "tsup": "^7.1.0"
   }
 }
