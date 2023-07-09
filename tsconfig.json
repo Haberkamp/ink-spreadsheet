@@ -5,7 +5,8 @@
     "skipLibCheck": true,
     "sourceMap": true,
     "strict": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "esModuleInterop": true
   },
   "exclude": ["node_modules"]
 }
