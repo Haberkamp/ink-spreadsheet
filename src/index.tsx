@@ -30,11 +30,11 @@ export default function Spreadsheet({ data, columns }: Props) {
             key={column.key}
             width={columnWidth}
             paddingX={HORIZONTAL_PADDING}
-            borderStyle={reachedEnd(index, items) ? BORDER_STYLE : undefined}
-            borderLeft={reachedEnd(index, items)}
+            borderStyle={BORDER_STYLE}
+            borderTop={false}
+            borderLeft={false}
             borderRight={!reachedEnd(index, items)}
-            borderBottom={!reachedEnd(index, items)}
-            borderTop={!reachedEnd(index, items)}
+            borderBottom={false}
           >
             <Text bold>{column.header}</Text>
           </Box>
