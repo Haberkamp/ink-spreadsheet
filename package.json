@@ -13,7 +13,7 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "lint:commit": "commitlint --from=32a84c2",
-    "lint": "eslint ./src ./tests"
+    "lint": "eslint ./src ./tests --report-unused-disable-directives"
   },
   "keywords": [
     "ink",
