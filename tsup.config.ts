@@ -6,4 +6,6 @@ export default defineConfig({
   sourcemap: true,
   clean: true,
   outDir: 'dist',
+  format: 'esm',
+  dts: true,
 });
