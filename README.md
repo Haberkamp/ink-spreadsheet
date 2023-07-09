@@ -40,3 +40,7 @@ export default function Component() {
   return <Spreadsheet columns={columns} data={data} />;
 }
 ```
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
