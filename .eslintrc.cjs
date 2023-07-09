@@ -13,4 +13,11 @@ module.exports = {
     tsconfigRootDir: __dirname,
   },
   root: true,
+  overrides: [
+    {
+      files: ['**/tests/**/*.ts', '**/tests/**/*.tsx'],
+      plugins: ['vitest'],
+      extends: ['plugin:vitest/all'],
+    },
+  ],
 };

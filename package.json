@@ -7,10 +7,12 @@
   "main": "index.js",
   "scripts": {
     "build": "tsup",
+    "test": "vitest run --coverage",
+    "test:watch": "vitest",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "lint:commit": "commitlint --from=32a84c2",
-    "lint": "eslint ./src"
+    "lint": "eslint ./src ./tests"
   },
   "keywords": [
     "ink",
@@ -27,9 +29,14 @@
     "@commitlint/config-conventional": "^17.6.6",
     "@typescript-eslint/eslint-plugin": "^5.61.0",
     "@typescript-eslint/parser": "^5.61.0",
+    "@vitest/coverage-v8": "^0.33.0",
     "eslint": "^8.44.0",
+    "eslint-plugin-vitest": "^0.2.6",
+    "ink-testing-library": "^3.0.0",
     "prettier": "^3.0.0",
     "tsup": "^7.1.0",
-    "typescript": "^5.1.6"
+    "typescript": "^5.1.6",
+    "vite": "^4.4.2",
+    "vitest": "^0.33.0"
   }
 }
