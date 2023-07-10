@@ -1,9 +1,9 @@
 import React from 'react';
 import { render } from 'ink-testing-library';
 import { describe, it, expect } from 'vitest';
-import Spreadsheet from '../src/components/Spreadsheet.js';
+import Spreadsheet from '../../src/components/Spreadsheet.js';
 
-describe('src/index.tsx', () => {
+describe('src/component/Spreadsheet.tsx', () => {
   it.each([
     [
       [
