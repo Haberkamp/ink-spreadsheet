@@ -1,22 +1,18 @@
 import { reachedEnd } from '../utils/array.utils.js';
 import React from 'react';
 import useColumnWidth from '../hooks/useColumnWidth.js';
-import { Text, Box } from 'ink';
+import { Box, Text } from 'ink';
 import {
   BORDER_BOTTOM,
   BORDER_STYLE,
   HORIZONTAL_PADDING,
 } from '../constants.js';
-import { NonObject } from '../types.js';
-
-interface ColumnDef {
-  header: string;
-  key: string;
-}
+import { ColumnDef } from '../types.js';
 
 interface Props {
   columns: ColumnDef[];
-  data: Record<string, NonObject>[];
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any -- needed until we've found a way to provide interfaces to the generic
+  data: Record<string, any>[];
 }
 
 /**

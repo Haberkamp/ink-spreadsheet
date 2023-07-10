@@ -14,17 +14,21 @@ npm install ink-spreadsheet
 
 ```typescript jsx
 import React from 'react';
-import Spreadsheet from 'ink-spreadsheet';
+import Spreadsheet, { createColumnHelper } from 'ink-spreadsheet';
 
+interface Person {
+  name: string;
+  email: string;
+}
+
+const columnHelper = createColumnHelper<Person>();
 const columns = [
-  {
+  columnHelper('name', {
     header: 'Name',
-    key: 'name',
-  },
-  {
-    key: 'email',
+  }),
+  columnHelper('email', {
     header: 'Email',
-  },
+  }),
 ];
 
 const data = [
