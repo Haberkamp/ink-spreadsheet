@@ -17,6 +17,8 @@
     "build": "tsup",
     "test": "vitest run --coverage",
     "test:watch": "vitest",
+    "typecheck": "vitest typecheck --run",
+    "typecheck:watch": "vitest typecheck",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "lint:commit": "commitlint --from=32a84c2",
