@@ -21,7 +21,7 @@
     "typecheck:watch": "vitest typecheck",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "lint:commit": "commitlint --from=32a84c2",
+    "lint:commit": "commitlint --from=529156b",
     "lint": "eslint ./src ./tests --report-unused-disable-directives"
   },
   "keywords": [
