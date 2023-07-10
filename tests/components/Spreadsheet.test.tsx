@@ -1,9 +1,10 @@
 import React from 'react';
 import { render } from 'ink-testing-library';
 import { describe, it, expect } from 'vitest';
-import Spreadsheet from '../src/index.js';
+import Spreadsheet from '../../src/components/Spreadsheet.js';
+import createColumnHelper from '../../src/lib/createColumnHelper.js';
 
-describe('src/index.tsx', () => {
+describe('src/component/Spreadsheet.tsx', () => {
   it.each([
     [
       [
@@ -67,6 +68,33 @@ describe('src/index.tsx', () => {
   ])('should render the correct output', (columns, data) => {
     const { lastFrame } = render(<Spreadsheet columns={columns} data={data} />);
 
+    expect(lastFrame()).toMatchSnapshot();
+  });
+
+  it('should render the correct output when using the column helper', () => {
+    // ARRANGE
+    interface Person {
+      name: string;
+    }
+
+    const columnHelper = createColumnHelper<Person>();
+
+    const columns = [
+      columnHelper('name', {
+        header: 'Full name',
+      }),
+    ];
+
+    const data: Person[] = [
+      {
+        name: 'John Doe',
+      },
+    ];
+
+    // ACT
+    const { lastFrame } = render(<Spreadsheet columns={columns} data={data} />);
+
+    // ASSERT
     expect(lastFrame()).toMatchSnapshot();
   });
 });

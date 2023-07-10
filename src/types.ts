@@ -1,1 +1,5 @@
-export type NonObject = string | number | boolean | undefined | null;
+// Column helper types
+export interface ColumnDef {
+  header: string;
+  key: string;
+}
