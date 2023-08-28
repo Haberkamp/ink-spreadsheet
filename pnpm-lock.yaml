@@ -37,7 +37,7 @@ devDependencies:
     version: 0.2.8(eslint@8.47.0)(typescript@5.1.6)(vite@4.4.9)(vitest@0.33.0)
   ink:
     specifier: ^4.2.0
-    version: 4.2.0(@types/react@18.2.14)(react@18.2.0)
+    version: 4.3.1(@types/react@18.2.14)(react@18.2.0)
   ink-testing-library:
     specifier: ^3.0.0
     version: 3.0.0(@types/react@18.2.14)
@@ -65,6 +65,14 @@ packages:
   /@aashutoshrathi/word-wrap@1.2.6:
     resolution: {integrity: sha512-1Yjs2SvM8TflER/OD3cOjhWWOZb58A2t7wpE2S9XfBYTiIl+XFhQG2bjy4Pu1I+EAlCNUzRDYDdFwFYUKvXcIA==}
     engines: {node: '>=0.10.0'}
+    dev: true
+
+  /@alcalzone/ansi-tokenize@0.1.2:
+    resolution: {integrity: sha512-/9Wcb0XV6jhvbn0UsL0CPBYKRWjSN0Er2vrrhFDNy0IMIvZ7pWBLwOZbFKTlyYCr1Q+UBXb1hWM4czT2FOfT+A==}
+    engines: {node: '>=14.13.1'}
+    dependencies:
+      ansi-styles: 6.2.1
+      is-fullwidth-code-point: 4.0.0
     dev: true
 
   /@ampproject/remapping@2.2.1:
@@ -2135,8 +2143,8 @@ packages:
       '@types/react': 18.2.14
     dev: true
 
-  /ink@4.2.0(@types/react@18.2.14)(react@18.2.0):
-    resolution: {integrity: sha512-q7SeFAEFMyKxTblyVI+CsxHzfiMMP9JUDG0cRmOKEAmJiYrtrDW1YYTv129RXqfn7fMKcVc4h/LbAJvqvZIuEQ==}
+  /ink@4.3.1(@types/react@18.2.14)(react@18.2.0):
+    resolution: {integrity: sha512-XlH5AiZRLIC4cF+eMgZLsB/feHCDT7lUtHXK4pe8ULGrC6mNosrYidzJr8CRY0P+hK7UmZ1rLO+ufdox53+NQg==}
     engines: {node: '>=14.16'}
     peerDependencies:
       '@types/react': '>=18.0.0'
@@ -2148,6 +2156,7 @@ packages:
       react-devtools-core:
         optional: true
     dependencies:
+      '@alcalzone/ansi-tokenize': 0.1.2
       '@types/react': 18.2.14
       ansi-escapes: 6.2.0
       auto-bind: 5.0.1
